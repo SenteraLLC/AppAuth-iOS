@@ -16,6 +16,9 @@
         limitations under the License.
  */
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+
 #import <TargetConditionals.h>
 
 #if TARGET_OS_IOS || TARGET_OS_MACCATALYST
@@ -169,3 +172,5 @@ NS_ASSUME_NONNULL_END
 #endif // !TARGET_OS_MACCATALYST
 
 #endif // TARGET_OS_IOS || TARGET_OS_MACCATALYST
+
+#pragma clang diagnostic pop
